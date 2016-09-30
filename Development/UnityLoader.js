@@ -3489,8 +3489,8 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = 'Gmachine_build_0930.data';
-    var REMOTE_PACKAGE_BASE = 'Gmachine_build_0930.data';
+    var PACKAGE_NAME = 'Gmachine_build_0930_2.data';
+    var REMOTE_PACKAGE_BASE = 'Gmachine_build_0930_2.data';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       Module.printErr('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
@@ -3499,8 +3499,8 @@ Module.expectedDataFileDownloads++;
                               Module['locateFile'](REMOTE_PACKAGE_BASE) :
                               ((Module['filePackagePrefixURL'] || '') + REMOTE_PACKAGE_BASE);
   
-      var REMOTE_PACKAGE_SIZE = 3031521;
-      var PACKAGE_UUID = 'c8f474f5-323f-49bb-b38f-911701de48d7';
+      var REMOTE_PACKAGE_SIZE = 5801312;
+      var PACKAGE_UUID = 'bfb900bf-8072-4cde-9756-8f77823040a3';
     
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
       var xhr = new XMLHttpRequest();
@@ -3604,12 +3604,12 @@ Module['FS_createPath']('/Managed/mono', '2.0', true, true);
       },
     };
 
-      new DataRequest(0, 258574, 0, 0).open('GET', '/data.unity3d');
-    new DataRequest(258574, 258593, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
-    new DataRequest(258593, 261464, 0, 0).open('GET', '/preserved_derived_types.xml');
-    new DataRequest(261464, 2128924, 0, 0).open('GET', '/Il2CppData/Metadata/global-metadata.dat');
-    new DataRequest(2128924, 3003896, 0, 0).open('GET', '/Resources/unity_default_resources');
-    new DataRequest(3003896, 3031521, 0, 0).open('GET', '/Managed/mono/2.0/machine.config');
+      new DataRequest(0, 3028365, 0, 0).open('GET', '/data.unity3d');
+    new DataRequest(3028365, 3028384, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
+    new DataRequest(3028384, 3031255, 0, 0).open('GET', '/preserved_derived_types.xml');
+    new DataRequest(3031255, 4898715, 0, 0).open('GET', '/Il2CppData/Metadata/global-metadata.dat');
+    new DataRequest(4898715, 5773687, 0, 0).open('GET', '/Resources/unity_default_resources');
+    new DataRequest(5773687, 5801312, 0, 0).open('GET', '/Managed/mono/2.0/machine.config');
 
     function processPackageData(arrayBuffer) {
       Module.finishedDataFileDownloads++;
@@ -3625,10 +3625,10 @@ Module['FS_createPath']('/Managed/mono', '2.0', true, true);
           DataRequest.prototype.requests["/Il2CppData/Metadata/global-metadata.dat"].onload();
           DataRequest.prototype.requests["/Resources/unity_default_resources"].onload();
           DataRequest.prototype.requests["/Managed/mono/2.0/machine.config"].onload();
-          Module['removeRunDependency']('datafile_Gmachine_build_0930.data');
+          Module['removeRunDependency']('datafile_Gmachine_build_0930_2.data');
 
     };
-    Module['addRunDependency']('datafile_Gmachine_build_0930.data');
+    Module['addRunDependency']('datafile_Gmachine_build_0930_2.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
